@@ -28,7 +28,10 @@ Priyam Banerjee 1001529497
     </div>
     <button type="submit">kmeans</button>
     <br><br>
-
+    {%for i in disCluster %}
+        {{i.dist}}<br>
+    {% endfor %}
+    <br>
     <br>
     {%for i in pdict%}
        No of points in cluster:{{i}}<br>
@@ -37,9 +40,9 @@ Priyam Banerjee 1001529497
     <br>
     </form>
 
-    <form method=POST action="/show">
-        <button type="submit">Display Result</button>
-    </form>
+    <!--form method=POST action="/show">
+        <button type="submit">Show Scatter Plot</button>
+    </form-->
     <form method=POST action="/Bargraph">
         <button type="submit">BarGraph</button>
     </form>

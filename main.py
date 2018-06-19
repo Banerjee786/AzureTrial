@@ -105,10 +105,8 @@ def main():
         pylab.scatter(cent[:,0],cent[:,1], marker='x', s = 400, linewidths=3)
 
         #pylab.savefig("templates/kmeans13.png")
-        #pylab.show()
-        pylab.savefig("templates/kmeans15.png")
-        
-    return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster,clr_dict=clr_dict)
+        #pylab.show()      
+        return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster,clr_dict=clr_dict)
 
 def getdata(attr1,attr2):
     c = 0

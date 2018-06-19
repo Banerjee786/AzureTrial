@@ -107,8 +107,8 @@ def main():
         #pylab.savefig("templates/kmeans13.png")
         #pylab.show()
         pylab.savefig("templates/kmeans15.png")
-
-        return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster,clr_dict=clr_dict)
+        
+    return render_template('index.html',cdist=cdist,pdict=pdict, disCluster = disCluster,clr_dict=clr_dict)
 
 def getdata(attr1,attr2):
     c = 0

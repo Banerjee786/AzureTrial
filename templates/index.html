@@ -27,9 +27,11 @@ Priyam Banerjee 1001529497
         <br><br>
     </div>
     <button type="submit">kmeans</button>
-    <br><br>
-    {%for i in disCluster %}
-        {{i.dist}}<br>
+    <br>
+    {{clr_dict}}
+    <br>
+    {%for j in cdist%}
+       {{j}}
     {% endfor %}
     <br>
     <br>
@@ -40,9 +42,9 @@ Priyam Banerjee 1001529497
     <br>
     </form>
 
-    <!--form method=POST action="/show">
+    <form method=POST action="/show">
         <button type="submit">Show Scatter Plot</button>
-    </form-->
+    </form>
     <form method=POST action="/Bargraph">
         <button type="submit">BarGraph</button>
     </form>

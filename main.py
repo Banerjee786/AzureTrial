@@ -131,7 +131,7 @@ def getdata(attr1,attr2):
 @app.route('/show', methods=['GET', 'POST'])
 def show():
   return render_template('show.html')
-'''
+
 @app.route('/Bargraph', methods=['GET', 'POST'])
 def bargraph():
   return render_template('d3barchart.html')
@@ -139,7 +139,7 @@ def bargraph():
 @app.route('/Piegraph', methods=['GET', 'POST'])
 def Piegraph():
   return render_template('d3piechart.html')
-'''
+
 
 if __name__ == "__main__":
     app.run(debug=True,port=5000)
